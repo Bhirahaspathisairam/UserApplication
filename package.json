@@ -1,0 +1,26 @@
+{
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix Userapp",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Bhirahaspathi sairam",
+  "license": "ISC"
+}
